@@ -1,37 +1,19 @@
 {
-  "name": "moviesearch",
-  "version": "0.1.0",
-  "private": true,
+  "name": "movie-search-app",
+  "version": "1.0.0",
+  "description": "IMDB Api Viewer",
+  "main": "index.js",
+  "repository": "git@github.com:corinabejan/Movie-Search-App.git",
+  "author": "Corina Bejan <54630123+corinabejan@users.noreply.github.com>",
+  "license": "MIT",
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.0"
   },
   "devDependencies": {
-    "axios": "^0.19.2"
+    "concurrently": "^5.1.0"
+  },
+  "scripts": {
+    "start": "concurrently \"node backend.js\" \"cd movie && yarn start\""
   }
 }
