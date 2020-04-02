@@ -1,5 +1,5 @@
 import React from 'react';
-import Movie from './components/Movie'
+// import Movie from './components/Movie'
 import Movies from './components/Movies'
 
 
@@ -11,7 +11,7 @@ function App() {
         <h1>Movie Database</h1>
       </header>
       <Movies />
-      <Movie />
+      {/* <Movie /> */}
     </div>
   );
 }
